@@ -1,0 +1,3 @@
+# js_snippets
+
+Contains various code snippets for JS variables, arrays, and functions such as async, promise...
