@@ -59,6 +59,33 @@
 // console.log(fruits.includes('hello')) // Check if something is in an array
 // console.log(fruits.indexOf('oranges')); // Find the position in the array of an array item
 
+// // JS Equality
+// // Primative values are string, int for example and are checked on its value, objects are checked to see if it is the same object in memory and not value
+// // == takes the type of the object anc converts it so as both are the same
+// // === uses the native value
+// console.log(1 == 1)
+// console.log(1 === 1)
+
+// console.log(1 == '1')
+// console.log(1 === '1')
+// console.log(1 === parseInt('1'))
+
+// console.log(0 == '')
+// console.log(0 === '')
+
+// console.log(0 == false)
+// console.log(0 === false)
+
+// // A good usecase for == is when checking if null is undefined (one in the same thing)
+// console.log(null == undefined)
+// console.log(null != undefined)
+// console.log(null === undefined)
+// console.log(null !== undefined)
+
+// // For not equals it is also better to use the tripple derivative
+// console.log(1 != '1')
+// console.log(1 !== '1')
+
 // // JS Promise - good for completing tasks in the background whilst doing other things e.g. file uploads
 // let p = new Promise((resolve, reject) => {
 //     let a = 1 + 1
@@ -159,24 +186,24 @@
 //     console.log(message)
 // })
 
-// Async Await
-function makeRequest(location) {
-    return new Promise((resolve, reject) => {
-        console.log(`Making request to ${location}`)
-        if (location === 'Google') {
-            resolve('Google waves')
-        } else {
-            reject('We can only talk to Google')
-        }
-    })
-}
+// // Async Await
+// function makeRequest(location) {
+//     return new Promise((resolve, reject) => {
+//         console.log(`Making request to ${location}`)
+//         if (location === 'Google') {
+//             resolve('Google waves')
+//         } else {
+//             reject('We can only talk to Google')
+//         }
+//     })
+// }
 
-function processRequest(response) {
-    return new Promise((resolve, reject) => {
-        console.log('Processing response')
-        resolve(`Extra information ${response}`)
-    })
-}
+// function processRequest(response) {
+//     return new Promise((resolve, reject) => {
+//         console.log('Processing response')
+//         resolve(`Extra information ${response}`)
+//     })
+// }
 
 // // Using Promise
 // makeRequest('Facepalm').then(response => {
@@ -188,15 +215,15 @@ function processRequest(response) {
 //     console.log(err)
 // })
 
-// Perform the above asynchroniously = makes the code easier to understand without the need to create different variables for the .then params
-async function doWork() {
-    try {
-        const response = await makeRequest('Facebook') // await tells JS that it should continue doing other work until this has finished and then returned its response
-        console.log('Response received')
-        const processedResponse = await processRequest(response)
-        console.log(processedResponse)
-    } catch (error) {
-        console.log(error)
-    }
-}
-doWork()
+// // Perform the above asynchroniously = makes the code easier to understand without the need to create different variables for the .then params
+// async function doWork() {
+//     try {
+//         const response = await makeRequest('Facebook') // await tells JS that it should continue doing other work until this has finished and then returned its response
+//         console.log('Response received')
+//         const processedResponse = await processRequest(response)
+//         console.log(processedResponse)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// doWork()
