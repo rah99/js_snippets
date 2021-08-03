@@ -60,7 +60,8 @@
 // console.log(fruits.indexOf('oranges')); // Find the position in the array of an array item
 
 // // JS Equality
-// // Primative values are string, int for example and are checked on its value, objects are checked to see if it is the same object in memory and not value
+// // Primative values are string, int for example and are checked on its native value, objects are checked to see if it is the same object in 
+// // memory and not value
 // // == takes the type of the object anc converts it so as both are the same
 // // === uses the native value
 // console.log(1 == 1)
