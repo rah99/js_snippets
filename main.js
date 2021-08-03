@@ -107,6 +107,7 @@
 // // Using callback
 // const userLeft = false
 // const userWatchingCatMeme = false
+//
 
 // // Callback example
 // function watchTutorialCallback(callback, errorCallback) {
